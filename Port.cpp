@@ -4,9 +4,10 @@
 
 #include "Port.h"
 
-Port::Port(int nDocks) // initialize a Port object with parameters
+Port::Port(int nDocks, int nTugs) // initialize a Port object with parameters
 {
     this->nDocks = nDocks;
+    this->nTugs = nTugs;
 
     pthread_mutex_init(&mutex1, NULL);
 
@@ -46,17 +47,27 @@ void Port::idleDock(int dockId) {
 }
 
 
-int Port::dockShip(int shipId) // return a non-negative number only when a customer got a service
+int Port::dockShip(int shipId, int neededTugs) // return a non-negative number only when a customer got a service
 {
     pthread_mutex_lock(&mutex1);
+
     if (sleepingDocks.empty()) {
         printf("Ship %i leaving port, because of no available docks.\n", shipId);
         pthread_mutex_unlock(&mutex1);
         return -1;
     }
+    if (neededTugs > nTugs) {
+        printf("Ship %i leaving port, because of no tugs available.\n", shipId);
+        pthread_mutex_unlock(&mutex1);
+        return -1;
+    }
+
+    nTugs -= neededTugs;
 
     dockedShips[shipId] = Ship();
     dockedShips[shipId].id = shipId;
+    dockedShips[shipId].neededTugs = neededTugs;
+
     pthread_cond_init(&dockedShips[shipId].shipCond, NULL);
     int dockId;
 
@@ -65,7 +76,7 @@ int Port::dockShip(int shipId) // return a non-negative number only when a custo
     dockedShips[shipId].myDockId = dockId;
     getDock(dockId)->myShipId = shipId;
 
-    printf("Ship %i moves to a dock %i\n", shipId, dockId);
+    printf("Ship %i moves to a dock %i with help of %i tugs\n", shipId, dockId, neededTugs);
     dockedShips[shipId].state = DOCKED;
     pthread_cond_signal(&(getDock(dockId)->dockCond));
     pthread_mutex_unlock(&mutex1);
@@ -74,15 +85,16 @@ int Port::dockShip(int shipId) // return a non-negative number only when a custo
 
 void Port::leaveDock(int shipId, int dockId) {
     pthread_mutex_lock(&mutex1);
-    printf("Ship %i is waiting to be allowed to go\n", shipId, dockId);
+    printf("Ship %i is waiting to be allowed to go from %i\n", shipId, dockId);
 
     while (dockedShips[shipId].myDockId != -1) {
         pthread_cond_wait(&dockedShips[shipId].shipCond, &mutex1);
     }
 
+    nTugs += dockedShips[shipId].neededTugs;
     dockedShips[shipId].state = LEAVING;
 
-    printf("Ship %i is sailing away!\n", shipId, dockId);
+    printf("Ship %i is sailing away from %i!\n", shipId, dockId);
 
     pthread_cond_signal(&(getDock(dockId)->dockCond));
 

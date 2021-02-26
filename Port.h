@@ -18,19 +18,20 @@ public:
         LEAVING
     };
 
-    Port(int nDocks);
+    Port(int nDocks, int nTugs);
 
     int randInt(int min, int max); // return a number between min and max
 
     void idleDock(int dockId);
 
-    int dockShip(int shipId); // return dock's id for docked ship   | (-1) is leaving port
+    int dockShip(int shipId, int neededTugs); // return dock's id for docked ship   | (-1) is leaving port
 
     void leaveDock(int shipId, int dockId);
 
     void farewellShip(int dockId);
 private:
     int nDocks;
+    int nTugs;
 
     struct Dock {
         int id;
@@ -41,6 +42,7 @@ private:
     struct Ship {
         int id;
         int myDockId = -1;      // no dock by default (-1)
+        int neededTugs = 1;     // one tug needed by default
         SHIP_STATE state = INCOMING; // incoming state by default
         pthread_cond_t shipCond;
     };
