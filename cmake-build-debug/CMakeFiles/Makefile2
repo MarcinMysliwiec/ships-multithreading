@@ -94,12 +94,12 @@ clean: CMakeFiles/Sleeping_Barber_Problem.dir/clean
 CMakeFiles/Sleeping_Barber_Problem.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Sleeping_Barber_Problem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Sleeping_Barber_Problem"
 .PHONY : CMakeFiles/Sleeping_Barber_Problem.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Sleeping_Barber_Problem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Sleeping_Barber_Problem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Sleeping_Barber_Problem.dir/rule

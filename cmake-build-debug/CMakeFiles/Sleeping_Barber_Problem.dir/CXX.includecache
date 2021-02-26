@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.cpp
+Hairdresser.h
+/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.h
+
+/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.h
+pthread.h
+-
+queue
+-
+map
+-
+iostream
+-
+random
+-
+algorithm
+-
+

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.cpp">
+			<Option target="Sleeping_Barber_Problem"/>
+		</Unit>
+		<Unit filename="/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.h">
+			<Option target="Sleeping_Barber_Problem"/>
+		</Unit>
 		<Unit filename="/home/psiw/CLionProjects/Sleeping-Barber-Problem/main.cpp">
 			<Option target="Sleeping_Barber_Problem"/>
 		</Unit>

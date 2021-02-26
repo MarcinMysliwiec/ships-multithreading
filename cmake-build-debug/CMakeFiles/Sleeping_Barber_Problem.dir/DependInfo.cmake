@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.cpp" "/home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.o"
   "/home/psiw/CLionProjects/Sleeping-Barber-Problem/main.cpp" "/home/psiw/CLionProjects/Sleeping-Barber-Problem/cmake-build-debug/CMakeFiles/Sleeping_Barber_Problem.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -143,6 +143,33 @@ Sleeping_Barber_Problem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/build
 .PHONY : Sleeping_Barber_Problem/fast
 
+Hairdresser.o: Hairdresser.cpp.o
+
+.PHONY : Hairdresser.o
+
+# target to build an object file
+Hairdresser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.o
+.PHONY : Hairdresser.cpp.o
+
+Hairdresser.i: Hairdresser.cpp.i
+
+.PHONY : Hairdresser.i
+
+# target to preprocess a source file
+Hairdresser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.i
+.PHONY : Hairdresser.cpp.i
+
+Hairdresser.s: Hairdresser.cpp.s
+
+.PHONY : Hairdresser.s
+
+# target to generate assembly for a file
+Hairdresser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.s
+.PHONY : Hairdresser.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Sleeping_Barber_Problem"
+	@echo "... Hairdresser.o"
+	@echo "... Hairdresser.i"
+	@echo "... Hairdresser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
