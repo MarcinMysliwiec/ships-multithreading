@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.o"
+  "CMakeFiles/Sleeping_Barber_Problem.dir/Port.cpp.o"
   "CMakeFiles/Sleeping_Barber_Problem.dir/main.cpp.o"
   "Sleeping_Barber_Problem"
   "Sleeping_Barber_Problem.pdb"

@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.cpp
-Hairdresser.h
-/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.h
-
-/home/psiw/CLionProjects/Sleeping-Barber-Problem/Hairdresser.h
+/home/psiw/CLionProjects/Sleeping-Barber-Problem/Port.h
 pthread.h
 -
 queue
@@ -23,4 +19,12 @@ random
 -
 algorithm
 -
+
+/home/psiw/CLionProjects/Sleeping-Barber-Problem/main.cpp
+iostream
+-
+unistd.h
+-
+Port.h
+/home/psiw/CLionProjects/Sleeping-Barber-Problem/Port.h
 

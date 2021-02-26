@@ -143,32 +143,32 @@ Sleeping_Barber_Problem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/build
 .PHONY : Sleeping_Barber_Problem/fast
 
-Hairdresser.o: Hairdresser.cpp.o
+Port.o: Port.cpp.o
 
-.PHONY : Hairdresser.o
+.PHONY : Port.o
 
 # target to build an object file
-Hairdresser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.o
-.PHONY : Hairdresser.cpp.o
+Port.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Port.cpp.o
+.PHONY : Port.cpp.o
 
-Hairdresser.i: Hairdresser.cpp.i
+Port.i: Port.cpp.i
 
-.PHONY : Hairdresser.i
+.PHONY : Port.i
 
 # target to preprocess a source file
-Hairdresser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.i
-.PHONY : Hairdresser.cpp.i
+Port.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Port.cpp.i
+.PHONY : Port.cpp.i
 
-Hairdresser.s: Hairdresser.cpp.s
+Port.s: Port.cpp.s
 
-.PHONY : Hairdresser.s
+.PHONY : Port.s
 
 # target to generate assembly for a file
-Hairdresser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Hairdresser.cpp.s
-.PHONY : Hairdresser.cpp.s
+Port.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sleeping_Barber_Problem.dir/build.make CMakeFiles/Sleeping_Barber_Problem.dir/Port.cpp.s
+.PHONY : Port.cpp.s
 
 main.o: main.cpp.o
 
@@ -206,9 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Sleeping_Barber_Problem"
-	@echo "... Hairdresser.o"
-	@echo "... Hairdresser.i"
-	@echo "... Hairdresser.s"
+	@echo "... Port.o"
+	@echo "... Port.i"
+	@echo "... Port.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
